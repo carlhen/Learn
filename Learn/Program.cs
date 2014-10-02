@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Learn
 {
-    class Program
+   class Program
     {
         static void Main(string[] args)
         {
@@ -19,20 +19,22 @@ namespace Learn
             Console.WriteLine(age);
             Console.ReadLine();
         }
-        int NumberWithoutDecimals(string agetemp,int atempt, int age)
+
+        int NumberWithoutDecimals(string agetemp, int atempt, int age)
         {
             for (int i = 0; i < atempt; i++)
-			{
-			    bool ageCheck = false;
+            {
+                bool ageCheck = false;
                 ageCheck = int.TryParse(agetemp, out age);
                 if (ageCheck == true)
                 {
                     return age;
-                    break; 
+                    break;
                 }
                 else
-                    Console.WriteLine("Try again, and remmember: Do not type a number WITH decimals"); 
-			}
+                    Console.WriteLine("Try again, and remmember: Do not type a number WITH decimals");
+            }
+            return 0;
         }
     }
 }
