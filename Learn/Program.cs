@@ -15,25 +15,26 @@ namespace Learn
             Program p = new Program();
             age = p.ConsoleNumberWithoutDecimals(loops, age);
             Console.WriteLine(age);
+        end:
             Console.ReadLine();
         }
 
         int ConsoleNumberWithoutDecimals(int atempt, int age)
         {
-            Console.WriteLine("Type a number without decimals");
             for (int i = 0; i < atempt; i++)
             {
                 bool ageCheck;
+                Console.WriteLine("Type a number without decimals");
                 ageCheck = int.TryParse(Console.ReadLine(), out age);
                 if (ageCheck == true)
                 {
                     return age;
                     break;
                 }
-                else
-                    Console.WriteLine("Try again, and remmember: Do not type a number WITH decimals");
             }
             return 0;
+            Console.Clear();
+            Console.WriteLine("Do you even know what decimals is? I'm out of here.");
         }
     }
 }
