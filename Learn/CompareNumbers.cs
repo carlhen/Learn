@@ -8,10 +8,19 @@ namespace Learn
 {
     class CompareNumbers
     {
-        {
         static void Main(string[] args)
         {
             Program p = new Program();//constructor; makes a new object of type Program
+            int result;
+            int num1;
+            int num2;
+            Console.WriteLine("input num1");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("input num2");
+            num2 = int.Parse(Console.ReadLine());
+            
+            
+
             
             //CH, how to call the method below? You write some code!
         }
