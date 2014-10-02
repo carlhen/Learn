@@ -10,7 +10,7 @@ namespace Learn
     {
         static void Main(string[] args)
         {
-            Program p = new Program();//constructor; makes a new object of type Program
+            CompareNumbers p = new CompareNumbers();//constructor; makes a new object of type Program
             int result;
             int num1;
             int num2;
@@ -18,9 +18,9 @@ namespace Learn
             num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("input num2");
             num2 = int.Parse(Console.ReadLine());
-            
-            
-
+            result = p.FindMax(num1, num2);
+            Console.WriteLine(result);
+            Console.ReadLine();
             
             //CH, how to call the method below? You write some code!
         }
