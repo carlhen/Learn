@@ -13,7 +13,7 @@ namespace Learn
             int age = 0;
             int loops = 3;
             Program p = new Program();
-            age = p.NumberWithoutDecimals(loops, age);
+            age = p.ConsoleNumberWithoutDecimals(loops, age);
             Console.WriteLine(age);
             Console.ReadLine();
         }
