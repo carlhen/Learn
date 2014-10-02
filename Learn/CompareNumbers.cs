@@ -18,7 +18,7 @@ namespace Learn
             num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("input num2");
             num2 = int.Parse(Console.ReadLine());
-            result = p.FindMax(num1, num2);
+            result = p.FindMax(num1, num2);// Veeldig bra!!!!!
             Console.WriteLine(result);
             Console.ReadLine();
             
