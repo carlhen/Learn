@@ -13,19 +13,18 @@ namespace Learn
             int age = 0;
             int loops = 3;
             Program p = new Program();
-            Console.WriteLine("Type a number without decimals");
-            string ageIn = Console.ReadLine();
-            age = p.NumberWithoutDecimals(ageIn, loops, age);
+            age = p.NumberWithoutDecimals(loops, age);
             Console.WriteLine(age);
             Console.ReadLine();
         }
 
-        int NumberWithoutDecimals(string agetemp, int atempt, int age)
+        int ConsoleNumberWithoutDecimals(int atempt, int age)
         {
+            Console.WriteLine("Type a number without decimals");
             for (int i = 0; i < atempt; i++)
             {
-                bool ageCheck = false;
-                ageCheck = int.TryParse(agetemp, out age);
+                bool ageCheck;
+                ageCheck = int.TryParse(Console.ReadLine(), out age);
                 if (ageCheck == true)
                 {
                     return age;
