@@ -10,7 +10,9 @@ namespace Learn
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("write");
+            int age = int.Parse(Console.ReadLine());
+            Console.WriteLine(age);
             Console.ReadLine();
         }
     }
